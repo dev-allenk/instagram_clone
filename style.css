@@ -1,0 +1,315 @@
+html {
+  font-size: 16px;
+}
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+input {
+  border: 1px solid #f0f0f0;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+a:visited {
+  color: black;
+}
+.box-base {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+.box-top-base {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+.round-img {
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 2rem;
+  height: 2rem;
+}
+.visible {
+  opacity: 1;
+}
+.half-visible {
+  opacity: 0.5;
+}
+.hidden {
+  opacity: 0;
+}
+.fcg {
+  color: #a2a2a2;
+}
+.fccrimsom {
+  color: #ed4956;
+}
+.fwb {
+  font-weight: bold;
+}
+.fseight {
+  font-size: 0.8rem;
+}
+.fssevenfive {
+  font-size: 0.75rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 4.75rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  transition: all 0.5s;
+  z-index: 1;
+}
+.small-header {
+  height: 3.5rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 62.5rem;
+  margin: 0 auto;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+#logo {
+  margin-left: 1rem;
+  height: 1.35rem;
+}
+.logo-line {
+  margin: 0 0.55rem 0 1.1rem;
+  height: 1.75rem;
+  border-right: 0.1rem solid black;
+  transition: all 0.2s;
+}
+#text-logo {
+  width: 7.5rem;
+  transition: all 0.2s;
+}
+.search-box {
+  width: 13.25rem;
+  height: 1.75rem;
+  padding: 2px 5px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+}
+.header-icons {
+  margin: 0 0.5rem;
+  height: 1.5rem;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+#bottom {
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto;
+  padding: 3.5rem 0;
+  width: 58.4375rem;
+}
+
+.main__container {
+  margin-right: 1.75rem;
+  margin-bottom: 4rem;
+  width: 38.4rem;
+}
+.main__profile {
+  display: flex;
+  align-items: center;
+}
+.main__content_option {
+  width: 1rem;
+  height: 1rem;
+}
+.main__content_option:hover {
+  cursor: pointer;
+}
+.main__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.carousel-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+.main-image {
+  width: 100%;
+  height: 100%;
+}
+.arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+/* 이부분 float 안 쓰고 div하나 감싸서 flex로 하고 header에 z-index뺄 수도 있을듯*/
+.arrow-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  float: left;
+}
+.arrow-next {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-150%, -50%);
+  float: right;
+}
+.main__icons {
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  width: 2rem;
+}
+.main__comments {
+  padding: 0.75rem;
+  height: 13.125rem;
+}
+.main__comments_likes {
+  font-weight: bold;
+}
+.main__comment-input {
+  width: 100%;
+  height: 3.25rem;
+  padding: 1rem;
+}
+
+#aside {
+  position: sticky;
+  top: 4.5rem;
+  height: 37.5rem;
+  display: flex;
+  flex-flow: column;
+}
+.aside__my-profile {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 0 5px 10px 5px;
+}
+.aside__my-profile_photo {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-right: 1.2rem;
+}
+.aside__follower-stories {
+  margin: 5px 0;
+  width: 18.125rem;
+  height: 13.75rem;
+  display: flex;
+  flex-flow: column;
+}
+.follower-wrapper {
+  overflow: auto;
+}
+.follower {
+  display: flex;
+  flex-flow: row;
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+  height: 3.25rem;
+}
+.follower__portrait {
+  width: 3.25rem;
+  height: 3.25rem;
+  position: relative;
+}
+.photo-deco {
+  position: absolute;
+  top: -0.45rem;
+  left: -0.45rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  z-index: 0;
+}
+.follower__portrait_photo {
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+.follower__name-container_nickname {
+  font-size: 0.8rem;
+}
+.follower__name-container_status {
+  font-size: 0.7rem;
+}
+.aside__recommendation {
+  margin: 10px 0;
+  width: 18.125rem;
+  height: 13.75rem;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: transform 0.1s, visibility 0s;
+}
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.modal-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 25rem;
+  height: 21rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+.modal-btns {
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+}
+.visible-modal {
+  visibility: visible;
+  z-index: 1;
+  transform: scale(1);
+}
